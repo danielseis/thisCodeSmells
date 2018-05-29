@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aplication.Perrera\DogHouse.Application.Impl.csproj" />
+    <ProjectReference Include="..\BusinesLogic.Perrera\DogHouse.Domain.csproj" />
+    <ProjectReference Include="..\DogHouse.Infrastructure.Contracts\DogHouse.Infrastructure.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
