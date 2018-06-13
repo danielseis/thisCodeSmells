@@ -15,15 +15,6 @@ namespace DogHouse.Domain
         public int Age { get; set; }
 
 
-        //public Dog(string name, string breadrace, int age, bool isdoghouse)
-        //{
-        //    DogHouseId = Guid.NewGuid();
-        //    Name = name;
-        //    DogBreedRace = breadrace;
-        //    Age = age;
-        //    IsInDogHouse = isdoghouse;
-        //}
-
         public override string ToString()
         {            
             return $"{Name}. {DogBreedRace}. {Age} years.";
@@ -39,6 +30,11 @@ namespace DogHouse.Domain
                 months = (DateTime.UtcNow.Month - this.DepositAt.Month) + 12 * (DateTime.UtcNow.Year - this.DepositAt.Year);
             }
             return months;
+        }
+
+        private void RenameDog()
+        {
+            Name = Name + " is on Deposit now :(";
         }
     }
 }
